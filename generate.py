@@ -28,7 +28,11 @@ OUT_FILE = os.path.join(BASE_DIR, "docs", "index.html")
 #   债券/美元债那一段净值几乎不动，做网格没意义，不需要可整段删掉。
 FUNDS = [
     # ---------- 自选 ----------
-    ("017437", "华宝纳斯达克精选"),
+    ("007844", "华宝标普油气上游股票人民币C"),
+    ("017437", "华宝纳斯达克精选股票发起式(QDII)C"),
+    ("016702", "银华海外数字经济量化选股混合发起式(QDII)C"),
+    ("015202", "汇添富全球移动互联混合(QDII)人民币C"),
+    ("018147", "建信新兴市场混合(QDII)C"),
     ("161128", "易方达标普500"),
     ("012806", "广发道琼斯石油"),
 
@@ -146,7 +150,6 @@ FUNDS = [
     ("015205", "银华全球新能源车量化优选股票(QDII)C"),
     ("016202", "汇添富全球汽车产业升级混合(QDII)人民币C"),
     ("016665", "天弘全球高端制造混合(QDII)C"),
-    ("016702", "银华海外数字经济量化选股混合发起式(QDII)C"),
     ("016823", "天弘全球新能源汽车股票(QDII-LOF)C"),
     ("017072", "申万菱信全球新能源股票型发起式(QDII)C"),
     ("017145", "华宝海外新能源汽车股票发起式(QDII)C"),
@@ -154,7 +157,6 @@ FUNDS = [
     ("017431", "嘉实全球创新龙头股票(QDII)人民币C"),
     ("017731", "嘉实全球产业升级股票发起式(QDII)C"),
     ("018036", "长城全球新能源车股票发起式(QDII)C"),
-    ("018147", "建信新兴市场混合(QDII)C"),
     ("018230", "易方达全球优质企业混合(QDII)C(人民币份额)"),
     ("019075", "嘉实全球产业精选混合发起式(QDII)人民币"),
     ("019156", "易方达全球配置混合(QDII)C(人民币)"),
@@ -189,11 +191,11 @@ WRITE_HTML = True             # 是否生成看板 docs/index.html
 # 本地没配环境变量又想直接写死，可填进下面默认值（注意不要提交授权码）。
 SEND_EMAIL = True
 MAIL = {
-    "host": os.environ.get("MAIL_HOST", ""),
-    "port": int(os.environ.get("MAIL_PORT", "0") or 0),
-    "user": os.environ.get("MAIL_USER", ""),
-    "pass": os.environ.get("MAIL_PASS", ""),
-    "to":   os.environ.get("MAIL_TO", ""),
+    "host": os.environ.get("MAIL_HOST", "smtp.qq.com"),
+    "port": int(os.environ.get("MAIL_PORT", "465") or 0),
+    "user": os.environ.get("MAIL_USER", "783109755@qq.com"),
+    "pass": os.environ.get("MAIL_PASS", "sahjbwruqwedbedj"),
+    "to":   os.environ.get("MAIL_TO", "809080777@qq.com"),
 }
 # ==============================================
 
