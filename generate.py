@@ -195,7 +195,7 @@ MAIL = {
     "port": int(os.environ.get("MAIL_PORT", "465") or 0),
     "user": os.environ.get("MAIL_USER", "783109755@qq.com"),
     "pass": os.environ.get("MAIL_PASS", "sahjbwruqwedbedj"),
-    "to":   os.environ.get("MAIL_TO", "809080777@qq.com"),
+    "to":   os.environ.get("MAIL_TO", "809080777@qq.com,1279885368@qq.com,120957262@qq.com,1013562640@qq.com"),
 }
 # ==============================================
 
